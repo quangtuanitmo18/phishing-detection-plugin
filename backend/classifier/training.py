@@ -46,6 +46,10 @@ y_test = np.load('../dataset/y_test.npy')
 
 pred = clf.predict(X_test)
 print('Accuracy: {}'.format(accuracy_score(y_test, pred)))
+print('F1: {}'.format(f1_score(y_test, pred)))
+print('Recall: {}'.format(recall_score(y_test, pred)))
+print('Precision: {}'.format(precision_score(y_test, pred)))
+print('ROC AUC: {}'.format(roc_auc_score(y_test, pred)))
 
 
 # In[7]:
