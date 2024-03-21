@@ -4,7 +4,7 @@
 # In[16]:
 
 
-import arff
+from scipy.io import arff
 import numpy as np
 import json
 from sklearn.model_selection import train_test_split, KFold
